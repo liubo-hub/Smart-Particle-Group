@@ -1,0 +1,58 @@
+<html lang="en">
+	<head>
+		<title>NDDEM logo</title>
+        <meta name="referrer" content="origin">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../resources/favicon.ico">
+        <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css?family=Montserrat">
+		<style>
+				body {
+					color: #e72564;
+					font-family:Montserrat;
+					font-size:26px;
+					text-align:center;
+
+					background-color: #111111;
+					margin: 0px;
+					overflow: hidden;
+				}
+                /* div.content{ width: 900px } */
+		</style>
+	</head>
+	<body>
+	<div id="container" class="content"><br /><br /><br /><br /><br />Loading...</div>
+    <!-- <script src="https://gitcdn.xyz/repo/mrdoob/three.js/dev/build/three.js"></script> -->
+    <!-- <script src="https://raw.githack.com/benjym/CIVL5999/master/ammo.js"></script> -->
+    <!-- <script src="https://gitcdn.xyz/repo/mrdoob/three.js/dev/examples/js/WebGL.js"></script> -->
+    <!-- <script src="https://gitcdn.xyz/repo/mrdoob/three.js/dev/examples/js/loaders/GLTFLoader.js"></script> -->
+    <script src="../js/CCapture.all.min.js"></script>
+	<!-- <script src="three/build/three.js"></script> -->
+	<script src="../resources/ammo.wasm.js"></script>
+	<!-- <script src="../node_modules/three/examples/js/controls/OrbitControls.js"></script> -->
+	<!-- <script src="../node_modules/three/examples/js/WebGL.js"></script> -->
+    <!-- <script src="three/examples/js/loaders/GLTFLoader.js"></script> -->
+
+    <script type="x-shader/x-vertex" id="vertexshader">
+		attribute float scale;
+		void main() {
+			vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+			gl_PointSize = scale * ( 300.0 / - mvPosition.z );
+			gl_Position = projectionMatrix * mvPosition;
+		}
+	</script>
+
+	<script type="x-shader/x-fragment" id="fragmentshader">
+		uniform vec3 color;
+		void main() {
+			if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+			gl_FragColor = vec4( color, 1.0 );
+		}
+	</script>
+
+    <script type="module" src="../deploy/logo-bundle.js"></script>
+
+
+	</body>
+</html>

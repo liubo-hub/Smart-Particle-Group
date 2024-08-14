@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  }
+
+.wrapper {
+  width: 1200px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.school {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background-image: url(../../images/head.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .school img {
+    width: 465px; }
+
+.top-school {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  top: 95px;
+  }
+  .top-school .top-school-text {
+    color: white;
+    }
+    .top-school .top-school-text h1 {
+      font-size: 70px;
+      }
+
+h1 {}
+    .top-school .top-school-text p {
+      font-family: arial;
+      font-size: 32px;
+      letter-spacing: 8px;
+      line-height: 0px; }
+
+/*---------------SLIDER STYLING---------------------------*\ */
+section {
+  margin-top: 10px;
+  }
+
+.slide-btn {
+  width: 40px;
+  height: 480px;
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1; }
+  .slide-btn:hover {
+    opacity: 0.7; }
+
+.slide-btn-next {
+  right: 5px; }
+
+.slide-btn-prev {
+  left: 5px; }
+
+#slide-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 490px;
+  overflow: hidden;
+  border-radius: 5px; }
+  #slide-container .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: all ease-in-out 450ms;
+    -webkit-transition: all ease-in-out 450ms;
+    -moz-transition: all ease-in-out 450ms; }
+  #slide-container #slide1 {
+    background-image: url(../../images/index/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  #slide-container #slide3 {
+    background-image: url(../../images/index/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  #slide-container #slide2 {
+    background-image: url(../../images/index/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+/*==============================================*\ */
+.para1 hr {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px; }
+.para1 h2 {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-family: Elianto;
+  text-align: center; }
+.para1 p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+  font-family: cordia New;
+  line-height: 1.2;
+  font-size: 27px;
+  width: 960px; }
+
+.strong-by strong {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 25px; }
+
+#web-out {
+  margin-top: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.05); }
+  #web-out p {
+    text-align: center;
+    font-family: cordia New;
+    line-height: 1.2;
+    font-size: 27px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+
+/*============FOOTER STYLING================*\ */
+footer {
+  margin-top: 150px;
+  border-top: 1px solid #000066;
+  height: 170px;
+  background: black;
+  color: white; }
+
+.credit {
+  margin-left: 218px;
+  margin-top: 85px; }
+
+.contact {
+  float: right;
+  width: 325px;
+  margin-right: 155px;
+  margin-top: -55px;
+  /*=====================================*\ */ }
+  .contact h3 {
+    text-align: center; }
+
+.info-sec {
+  height: 200px;
+  width: 480px;
+  margin: 20px 0px;
+  padding-bottom: 20px; }
+
+.news {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 480px;
+  height: 200px; }
+  .news h3 {
+    text-align: center;
+    font-family: century gothic;
+    border-bottom: 1px solid #040439; }
+  .news div {
+    padding-top: 10px;
+    text-align: center; }
+
+.calender {
+  float: right;
+  width: 480px;
+  height: 200px;
+  margin-top: -260px;
+  padding: 20px 0px; }
+
+.callhead {
+  text-align: center;
+  background: darkblue;
+  color: white;
+  font-family: century gothic; }
+
+.callbody {
+  height: 180px;
+  background: lightblue; }
+
+/* home */
+.photo-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  gap: 20px; /* 控制照片之间的间隔 */
+}
+
+.photo-item {
+  text-align: center; /* 使文本居中 */
+  flex-basis: 37%;
+}
+
+.photo-item img {
+  max-width: 100%; /* 确保照片不超过容器宽度 */
+  height: auto; /* 自动高度保持宽高比 */
+}
+@media (max-width: 600px) {
+  .photo-container {
+    flex-direction: column;
+  }
+}
+h2 {
+    font-size: 24px; /* 设置字体大小 */
+    color: #333; /* 设置字体颜色 */
+    margin-left: 13%;
+    margin-bottom: 10px; /* 设置底部外边距 */
+}
+h4 {
+    font-size: 24px; /* 设置字体大小 */
+    color: #333; /* 设置字体颜色 */
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: 20px; /* 设置底部外边距 */
+}
+
+/* 设置日期样式 */
+p3 {
+    font-size: 20px; /* 设置字体大小 */
+    color: #1e1f22; /* 设置字体颜色 */
+    margin-left: 13%;
+}
+
+/*other*/
+.container_other {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  flex: 1;
+  max-width: 600px;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* about us灰色筐样式 */
+.container {
+  position: relative; /* 相对定位 */
+  background-color: #f0f0f0; /* 灰色背景 */
+  display: flex; /* 使用 Flex 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  padding: 20px; /* 内边距 */
+  margin-top: 60px; /* 顶部外边距，根据需要调整 */
+  margin-bottom: 50px; /* 底部外边距，根据需要调整 */
+  margin-left: 90px; /* 左侧与页面边缘之间的间距，根据需要调整 */
+  margin-right: 90px; /* 左侧与页面边缘之间的间距，根据需要调整 */
+}
+
+/* 左侧照片样式 */
+.image-container {
+  flex: 10; /* 左侧占据剩余空间 */
+  margin-right: 10px; /* 右侧与文字之间的间距 */
+}
+
+.image-container img {
+  width: 20%; /* 调整图片宽度，可以根据需要修改具体数值 */
+  border-radius: 8px; /* 图片圆角效果（可选） */
+}
+
+/* 右侧文字样式 */
+.text-container {
+  position: absolute; /* 绝对定位 */
+  top: 10%; /* 调整上边距，根据需要调整 */
+  left: 50%; /* 将文字定位在容器的水平中央 */
+  transform: translateX(-50%); /* 通过负的50%的translateX将文字居中 */
+  text-align: left; /* 左对齐，可根据需要调整 */
+
+  /* 文字颜色 */
+  h1 {
+    color: #ff1d00; /* 标题颜色 */
+  }
+
+  p1 {
+    color: #666; /* 段落颜色 */
+  }
+
+  /* 文字大小 */
+  h1 {
+    font-size: 30px; /* 标题字体大小 */
+  }
+
+  p1 {
+    font-size: 20px; /* 段落字体大小 */
+  }
+
+  /* 避免文字溢出的样式 */
+  p1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  h3 {
+    color: #1e1f22; /* 标题颜色 */
+  }
+  h3 {
+    font-size: 20px; /* 标题字体大小 */
+  }
+  p2 {
+    font-size: 20px; /* 段落字体大小 */
+  }
+}
+
+/* 定义包含工作经历的筐的样式 */
+.introduce-container {
+  background-color: #f0f0f0; /* 筐的背景颜色 */
+  padding: 20px; /* 内边距 */
+  margin: 20px auto; /* 上下外边距为20px，左右自动居中 */
+  max-width: 90%; /* 最大宽度为100% */
+}
+.introduce-container p {
+  margin-bottom: 10px; /* 设置段落之间的下边距，根据需要调整 */
+}
+/* 定义标题样式 */
+.title {
+  background-color: #ff1d00; /* 标题的背景颜色 */
+  color: #fff; /* 标题的文字颜色 */
+  padding: 10px; /* 内边距 */
+  font-size: 24px; /* 标题的字体大小 */
+  font-weight: bold; /* 标题的字体粗细 */
+  margin-bottom: 10px; /* 标题与工作经历之间的下边距 */
+}
+
+/* 定义工作经历的样式 */
+.introduce {
+  font-size: 18px; /* 工作经历的字体大小 */
+  margin-bottom: 10px; /* 工作经历之间的下边距 */
+}
+
+/* 媒体查询：在屏幕宽度小于768px时调整样式 */
+@media screen and (max-width: 768px) {
+  .introduce-container {
+    padding: 10px; /* 调整内边距 */
+  }
+
+  .title {
+    padding: 5px; /* 调整标题内边距 */
+    font-size: 20px; /* 调整标题字体大小 */
+  }
+
+  .introduce {
+    font-size: 16px; /* 调整工作经历字体大小 */
+  }
+}
+
+
+/*other_two*/
+.gridliu {
+  display: grid;
+  grid-template-columns: repeat(12, 2fr);
+  grid-gap: 4px;
+}
+
+.gridliu label {
+  grid-column: span 1;
+}
+
+.gridliu input {
+  grid-column: span 2;
+}
+.container_other_two {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  flex: 1;
+  max-width: 700px;
+  height: 600px;
+  padding: 3px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.video-container_other_two {
+    width: 100%;
+    height: 45%;
+    padding-bottom: 56.25%; /* 16:9 宽高比视频的高度占宽度的百分比 */
+    position: relative;
+}
+.video-container_other_two iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

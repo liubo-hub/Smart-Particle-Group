@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>NDDEM</title>
+		<meta charset="utf-8">
+        <link rel='icon' href='resources/favicon.ico' type='image/x-icon'/ >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/loading_screen.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQE06JN33T"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-GQE06JN33T');
+        </script>
+	</head>
+	<body>
+        <div id="scigem_tag">
+            Built with <a href="https://github.com/Franzzzzzzzz/NDDEM/">NDDEM</a> and <a href="https://threejs.org/">three.js</a> by <a href="http://francoisguillard.com/en/welcome/">François Guillard</a> and <a href="http://benjymarks.com/">Benjy Marks</a>
+        </div>
+        <!-- <script src="node_modules/papaparse/papaparse.js"></script> -->
+        <script src="./js/dat.gui.min.custom.js"></script> <!-- changed styling -->
+        <!-- <script src="js/datguivr.js"></script> -->
+        <script src="./js/CCapture.all.min.js"></script>
+        <script type="module" src="./deploy/nddem-bundle.js"></script>
+        <section id="loading-screen">
+            <div class="wrapper">
+                <span id="loading-text">&nbsp;Loading</span>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </section>
+	</body>
+</html>

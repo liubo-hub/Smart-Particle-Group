@@ -1,0 +1,31 @@
+/*==================Header==================================*\ */
+header {
+  display: flex;
+  padding: 10px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-image: url('122.png');
+  background-size: cover; /* 调整背景图片大小以填充整个元素 */
+  text-shadow: 1px 1px 5px darkgrey;
+  }
+  header img {
+    width: 170px; }
+  header h1 {
+    margin-top: 15px;
+    font-size: 50px;
+    padding-left: 0px;
+    }
+  header .thought {
+    float: right;
+    margin-right: 40px; }
+    header .thought p {
+      width: 250px; }
+  header .thoughthead {
+    margin-top: 51px;
+    font-family: century gothic;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: center; }
+
+/*# sourceMappingURL=header.css.map */
